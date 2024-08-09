@@ -47,3 +47,5 @@ print(test) # выведет None
 tst1 = '123'
 tst2 = str(456)
 print(tst1 + tst2)
+
+tst = 123
