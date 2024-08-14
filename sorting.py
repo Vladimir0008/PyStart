@@ -25,3 +25,8 @@ print(res) # выведет [1, 2, 3]
 lst = [4, 12, 24]
 res = sorted(lst,reverse=True)
 print(res)
+
+lst = ['4', '3', '2', '1']
+lst.sort()
+res = ''.join(lst)
+print(res)
