@@ -1,0 +1,1 @@
+print( ( "young", "old" ) [int(input())>20] )
