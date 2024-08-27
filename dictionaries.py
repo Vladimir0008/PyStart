@@ -1,3 +1,5 @@
+import sys
+
 dct1 = {
 	'a': 1,
 	'b': 2,
@@ -94,3 +96,105 @@ dct = {
 dct.clear()
 dct['sss'] = 'text4'
 print(dct)
+print('sss' in dct)
+print('sss' not in dct)
+
+print(dct['sss'])
+print(dct.get('sss'))
+print(dct.get('sssw'))
+
+dct = {
+	'aa': 'text1',
+	'bb': 'text2',
+	3: 'text3'
+}
+
+res = []
+for i in dct:
+	res.append(i)
+	res.append(dct[i])
+print(res)
+
+
+lst = [['a', '1'], ['b', '2'], [33, 44]]
+dct = dict(lst)
+
+print(dct) # выведет {'a': '1', 'b': '2'}
+
+tlp = ((1, 'a'), (2, 'b'))
+dct = dict(tlp)
+
+print(dct) # выведет {1: 'a', 2: 'b'}
+
+tst = ('a', 1), ('b', 2), ('c', 3)
+print(tst)
+dct = dict(tst)
+
+print(dct)
+
+tst =(('a', 1, 3), ('b', 2, 4), ('c', 3, 0)),(('a', 1, 3), ('b', 2, 4), ('c', 3, 0))
+print(tst)
+
+
+dct = {
+	'x': '1',
+	'y': '2',
+	'z': '3'
+}
+
+res = 0
+for i in dct:
+	res = res + int(dct[i])**2
+print(res)
+
+
+dct1 = {
+	'1': 12,
+	'2': 24,
+	'3': 36
+}
+
+dct2 = {
+	'a': '3',
+	'b': '6',
+	'c': '9'
+}
+
+res1 = 0
+for i in dct1:
+	res1 = res1 + dct1[i]
+print(res1)
+
+res2 = 0
+for i in dct2:
+	res2 = res2 + int(dct2[i])
+print(res2)
+print(res1 - res2)
+
+dct = {
+	1: '4',
+	2: '5',
+	3: '6'
+}
+res = ''
+for i in dct:
+	res = str(i) + str(dct[i])
+	print(res)
+
+dct = {
+	'x': '1',
+	'y': '2',
+	'z': '3'
+}
+
+ress = ''
+resss = ''
+res = []
+for i in dct:
+	ress = ress + dct[i]
+	resss = resss + dct[i]
+	res.append(dct[i]*(int(dct[i])+1))
+
+print((str(res)))
+print('/'.join(ress))
+print('-'.join(resss))
