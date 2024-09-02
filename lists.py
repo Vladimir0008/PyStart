@@ -129,3 +129,4 @@ lst = [1, 2, 1, 3]
 print(lst.count(4)) # выведет 0
 print(lst.count(1)) # выведет 2
 
+

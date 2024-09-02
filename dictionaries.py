@@ -1,4 +1,3 @@
-import sys
 
 dct1 = {
 	'a': 1,
